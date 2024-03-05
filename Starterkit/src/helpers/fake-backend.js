@@ -34,10 +34,10 @@ export function configureFakeBackend() {
                     if (filteredUsers.length) {
                         // if login details are valid return user details and fake jwt token
                         // for example only passing in drupal login details for bearer token
-                        const username = 'test';
-                        const pass = 'Test123';
-                        const client_secret = 'abc123';
-                        const client_id = '7bcc8836-6c3d-4dd7-b4e2-1cd1ab39e2a3';
+                        const username = process.env.VUE_APP_DRUPAL_USER;
+                        const pass = process.env.VUE_APP_DRUPAL_PASS;
+                        const client_secret = process.env.VUE_APP_CLIENT_SECRET;
+                        const client_id = process.env.VUE_APP_NOT_CLIENT_ID;
                         const drupaloath = 'https://dev-gametest.pantheonsite.io/oauth/token';
 
                         var oauthdetails = {
