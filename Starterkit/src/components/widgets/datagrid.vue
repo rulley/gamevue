@@ -192,7 +192,7 @@ export default {
             fetch('https://dev-gametest.pantheonsite.io/clients/transport-templates-modeling.php?type=update', {
                 mode:  'cors', 
                 method: 'post',
-                body: 'token=' + drupaltoken +',models=' + e.data.models,
+                body: 'token=' + drupaltoken +'&models=' + e.data.models,
                 headers: {
                     'Accept': 'application/vnd.api+json',
                     'Content-type': 'application/vnd.api+json',
@@ -220,7 +220,7 @@ export default {
             fetch('https://dev-gametest.pantheonsite.io/clients/transport-templates-modeling.php?type=create', {
                 mode:  'cors', 
                 method: 'post',
-                body: 'token=' + drupaltoken +',models=' + e.data.models,
+                body: 'token=' + drupaltoken +'&models=' + e.data.models,
                 headers: {
                     'Accept': 'application/vnd.api+json',
                     'Content-type': 'application/vnd.api+json',
@@ -248,7 +248,7 @@ export default {
             fetch('https://dev-gametest.pantheonsite.io/clients/transport-templates-modeling.php?type=delete', {
                 mode:  'cors', 
                 method: 'post',
-                body: 'token=' + drupaltoken +',models=' + e.data.models,
+                body: 'token=' + drupaltoken +'&models=' + e.data.models,
                 headers: {
                     'Accept': 'application/vnd.api+json',
                     'Content-type': 'application/vnd.api+json',
