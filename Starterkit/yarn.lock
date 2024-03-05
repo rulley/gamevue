@@ -1963,6 +1963,11 @@
   resolved "https://registry.yarnpkg.com/@progress/kendo-base-components-vue-wrapper/-/kendo-base-components-vue-wrapper-2023.3.1010.tgz#46e50bb4be42daf4f011ea49355f747958c1b128"
   integrity sha512-9x/t9VgZhEsx8bzlUDFyby15/WRnvvAzeYDW9pVbF6CvrjCyR1WSx0Sevag4B4vFnXvqsx6+4wOa3Ie8zXGfxQ==
 
+"@progress/kendo-charts@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-charts/-/kendo-charts-2.2.0.tgz#34c3d113b89b6fd68eed5363ff6d73d40b6dfc00"
+  integrity sha512-diMx9oG6VtjGlLSqwtfozYfR9fsSg9DOHo0NSKP4D2WjjsmI0QBfKs0XHQqKmDsxn53+GxBKhbY5GMZLphqQEA==
+
 "@progress/kendo-datasource-vue-wrapper@^2023.3.1010":
   version "2023.3.1010"
   resolved "https://registry.yarnpkg.com/@progress/kendo-datasource-vue-wrapper/-/kendo-datasource-vue-wrapper-2023.3.1010.tgz#7e3b7f7c15303d48bba7667668ba9f03fbcf442d"
@@ -1977,12 +1982,41 @@
   dependencies:
     "@progress/kendo-base-components-vue-wrapper" "2023.3.1010"
 
+"@progress/kendo-draggable@^3.0.1":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-draggable/-/kendo-draggable-3.0.2.tgz#d0ce83a466db470abc515fdf030b6094749e8156"
+  integrity sha512-B5bR1bEtLZ4i0eCtbT1umem3w9dC82QZ8wJ9/MMjcS0/luBiARnIacRM69b0PYN+uESztBuzKrrTpW70FCT47A==
+
+"@progress/kendo-drawing@^1.19.1":
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-drawing/-/kendo-drawing-1.19.1.tgz#9357675f86966bbd1c89af9f7522272ea37e89f3"
+  integrity sha512-txk5UiksL0Bo7qkuAlOlXOD9HbHUDWX+y4L+NZUSF9+LAKeemibo2aAm5zKv+LlImwik17e6FDKvziZ5xafSUw==
+  dependencies:
+    "@progress/pako-esm" "^1.0.1"
+
 "@progress/kendo-grid-vue-wrapper@^2023.3.1010":
   version "2023.3.1010"
   resolved "https://registry.yarnpkg.com/@progress/kendo-grid-vue-wrapper/-/kendo-grid-vue-wrapper-2023.3.1010.tgz#aae17c404d6c575b0973f0ca9a9d5c2c025e766f"
   integrity sha512-ordn5vFTaAJvs745BGeaOUgltWqT+I80pl3bD9kllxUjVddsvf7Wna+VnPrEjZiQ9IcdowlutIfX88iazQ9k0g==
   dependencies:
     "@progress/kendo-base-components-vue-wrapper" "2023.3.1010"
+
+"@progress/kendo-intl@^3.0.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-intl/-/kendo-intl-3.1.2.tgz#ff87b051ca6ba36e290eb0f072d29ec28952da21"
+  integrity sha512-rOtMppQSrScwryMfeQSOdsnRi9Oj1l08HFoEC2ticZ0T2N0/JN9CHt+fuToRx5onXK7QkcbbuNM0D09o8TeeMw==
+
+"@progress/kendo-licensing@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-licensing/-/kendo-licensing-1.3.5.tgz#598d39068c87e64fac3930414f4d9f491b555099"
+  integrity sha512-HWxM6Ov1g0LvOQN9sp+3N1h+YpF0OKq7rWW2bqoJnkyHy8woC8Ve6ew6KmHdbeaKMgikVOYgyo5NTjef2j+gVQ==
+  dependencies:
+    jsonwebtoken "^9.0.2"
+
+"@progress/kendo-popup-common@^1.6.1":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.9.2.tgz#d5b56d22bc8c6ce812dd2973ad2b22abfac8720f"
+  integrity sha512-Gs50UafJcERiGuSP/47Yg7ftPX3HQXiK5M9zHB8sHSoc1/AEYd0/Sj5wh8UrVVBAM9b0pUTwmEuzQ/D5yDDd2Q==
 
 "@progress/kendo-svg-icons@2.1.0":
   version "2.1.0"
@@ -2016,6 +2050,51 @@
   integrity sha512-tf7WYabBj2qrhx4gbFo8WdgdlUzK3CISah/eumW2Mr9mulYGzAyOzME1nPOs2Jzwt6RbA7zcJjsU7kDWT68tSg==
   dependencies:
     jquery "1.10.0 - 3.7"
+
+"@progress/kendo-vue-animation@4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-vue-animation/-/kendo-vue-animation-4.3.1.tgz#319596044d03040905f4e1d1f29361bffab2de1b"
+  integrity sha512-DmEf5jeoomU5G9gPQFYCvFKaAvqxtQxPAYnkIVzPWK5Vb0V0QRNEoR7rIbssxNYJNS7+pzooxy5B4ghE8CVM3w==
+  dependencies:
+    "@progress/kendo-vue-common" "4.3.1"
+
+"@progress/kendo-vue-charts@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-vue-charts/-/kendo-vue-charts-4.3.1.tgz#53d7707f7165f30b2fd9101b6cf0a105d4fcb353"
+  integrity sha512-o6Pt85wFyLz+l0l3lZULPZf2OM8t+f2vdV70izck5a6S7crbKZi4nGMzbgexGfwk0ktIj3t/aMZuZVpU4xz6hA==
+  dependencies:
+    "@progress/kendo-charts" "2.2.0"
+    "@progress/kendo-vue-common" "4.3.1"
+    "@progress/kendo-vue-popup" "4.3.1"
+
+"@progress/kendo-vue-common@4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-vue-common/-/kendo-vue-common-4.3.1.tgz#772ba49c0dfa5dda8cad60361abcc6ce611fa77f"
+  integrity sha512-t5KHjSfiogdKM6oKgiLv0RZOKq+8WOh1o5nf0IHRZq8Mt4PXPesD1v+hBuzi0noIuQx7NcwpOU2Y1hCZa2vRNw==
+  dependencies:
+    "@progress/kendo-draggable" "^3.0.1"
+
+"@progress/kendo-vue-intl@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-vue-intl/-/kendo-vue-intl-4.3.1.tgz#fb5a06176ecae536ea2a66c17a9cc4f983a963c4"
+  integrity sha512-yyejTPxRg+/xQdQbVW4msXuPbxblPFVZeVRDOUM5zQ0zonI/7W00fqJZAElXFqcwEIZ3kD+k4RLuEYAzv5PIWw==
+  dependencies:
+    "@progress/kendo-intl" "^3.0.2"
+    "@progress/kendo-vue-common" "4.3.1"
+
+"@progress/kendo-vue-popup@4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-vue-popup/-/kendo-vue-popup-4.3.1.tgz#949cabe69ab535a014ac51ab482cf01237ab0a35"
+  integrity sha512-WHYXMqFQG63WEgplogkSYoDF6NYqFWOEtOvCe4CbDkM8f9dbX/LgsO3RkNuoLBdj7MuT6oR+5J/+GPZg4uifhQ==
+  dependencies:
+    "@progress/kendo-popup-common" "^1.6.1"
+    "@progress/kendo-vue-animation" "4.3.1"
+    "@progress/kendo-vue-common" "4.3.1"
+
+"@progress/pako-esm@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@progress/pako-esm/-/pako-esm-1.0.1.tgz#eeb7d2c3f8e865198edf23fb42645bd8cb513a11"
+  integrity sha512-O4A3b1EuE9Xe1pC3Xz9Tcn1M/CYrL71f4y/5TXeytOVTkmkzBgYW97fYP2f+54H0e0erWRaqV/kUUB/a8Uxfbw==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -3721,6 +3800,11 @@ browserslist@^4.0.0, browserslist@^4.16.3, browserslist@^4.21.10, browserslist@^
     node-releases "^2.0.14"
     update-browserslist-db "^1.0.13"
 
+buffer-equal-constant-time@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz#f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
+  integrity sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==
+
 buffer-from@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
@@ -4884,6 +4968,13 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
+
+ecdsa-sig-formatter@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz#ae0f0fa2d85045ef14a817daa3ce9acd0489e5bf"
+  integrity sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==
+  dependencies:
+    safe-buffer "^5.0.1"
 
 echarts@^5.4.0, echarts@^5.4.3:
   version "5.5.0"
@@ -6734,6 +6825,22 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+jsonwebtoken@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-9.0.2.tgz#65ff91f4abef1784697d40952bb1998c504caaf3"
+  integrity sha512-PRp66vJ865SSqOlgqS8hujT5U4AOgMfhrwYIuIhfKaoSCZcirrmASQr8CX7cUg+RMih+hgznrjp99o+W4pJLHQ==
+  dependencies:
+    jws "^3.2.2"
+    lodash.includes "^4.3.0"
+    lodash.isboolean "^3.0.3"
+    lodash.isinteger "^4.0.4"
+    lodash.isnumber "^3.0.3"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    lodash.once "^4.0.0"
+    ms "^2.1.1"
+    semver "^7.5.4"
+
 jsprim@^1.2.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/jsprim/-/jsprim-1.4.2.tgz#712c65533a15c878ba59e9ed5f0e26d5b77c5feb"
@@ -6743,6 +6850,23 @@ jsprim@^1.2.2:
     extsprintf "1.3.0"
     json-schema "0.4.0"
     verror "1.10.0"
+
+jwa@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/jwa/-/jwa-1.4.1.tgz#743c32985cb9e98655530d53641b66c8645b039a"
+  integrity sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA==
+  dependencies:
+    buffer-equal-constant-time "1.0.1"
+    ecdsa-sig-formatter "1.0.11"
+    safe-buffer "^5.0.1"
+
+jws@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/jws/-/jws-3.2.2.tgz#001099f3639468c9414000e99995fa52fb478304"
+  integrity sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA==
+  dependencies:
+    jwa "^1.4.1"
+    safe-buffer "^5.0.1"
 
 kdbush@^4.0.2:
   version "4.0.2"
@@ -6877,6 +7001,36 @@ lodash.defaultsdeep@^4.6.1:
   resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
   integrity sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==
 
+lodash.includes@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
+  integrity sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w==
+
+lodash.isboolean@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz#6c2e171db2a257cd96802fd43b01b20d5f5870f6"
+  integrity sha512-Bz5mupy2SVbPHURB98VAcw+aHh4vRV5IPNhILUCsOzRmsTmSQ17jIuqopAentWoehktxGd9e/hbIXq980/1QJg==
+
+lodash.isinteger@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz#619c0af3d03f8b04c31f5882840b77b11cd68343"
+  integrity sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA==
+
+lodash.isnumber@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
+  integrity sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==
+
+lodash.isstring@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
+  integrity sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw==
+
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
@@ -6891,6 +7045,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==
+
+lodash.once@^4.0.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
+  integrity sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -10214,6 +10373,11 @@ vue-chartjs@^5.2.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/vue-chartjs/-/vue-chartjs-5.3.0.tgz#59920a07d72f37a2375d495256e486b92813bf6e"
   integrity sha512-8XqX0JU8vFZ+WA2/knz4z3ThClduni2Nm0BMe2u0mXgTfd9pXrmJ07QBI+WAij5P/aPmPMX54HCE1seWL37ZdQ==
+
+vue-cookies@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/vue-cookies/-/vue-cookies-1.8.3.tgz#0c7ce26d150f7ac50356ae17cb4ead1122013b82"
+  integrity sha512-VBRsyRMVdahBgFfh389TMHPmDdr4URDJNMk4FKSCfuNITs7+jitBDhwyL4RJd3WUsfOYNNjPAkfbehyH9AFuoA==
 
 vue-demi@>=0.13.0, vue-demi@>=0.14.7:
   version "0.14.7"

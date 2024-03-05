@@ -1,8 +1,13 @@
+import Vue from 'vue'
+import VueCookies from 'vue-cookies'
+
 // array in local storage for registered users
 let users = JSON.parse(localStorage.getItem('users'))
     || [{ username: "admin", email: "admin2@themesbrand.com", password: "123456" }];
 
 export function configureFakeBackend() {
+     // default options config: { expires: '1d', path: '/', domain: '', secure: '', sameSite: 'Lax' }
+                
 
     let realFetch = window.fetch;
     window.fetch = function (url, opts) {
@@ -21,10 +26,57 @@ export function configureFakeBackend() {
                         return user.email === params.email && user.password === params.password;
                     });
 
+
+                    //////////Fake drupal oauth user - grab and store in local storage.. local 
+                    /////local storage is not secure for demo purposed only. SPA/decoupled apps should use 
+                    ////// a token handler pattern approach - https://curity.io/resources/learn/the-token-handler-pattern/?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform
+                    
                     if (filteredUsers.length) {
                         // if login details are valid return user details and fake jwt token
                         // for example only passing in drupal login details for bearer token
+                        const username = 'test';
+                        const pass = 'Test123';
+                        const client_secret = 'abc123';
+                        const client_id = '7bcc8836-6c3d-4dd7-b4e2-1cd1ab39e2a3';
+                        const drupaloath = 'https://dev-gametest.pantheonsite.io/oauth/token';
+
+                        var oauthdetails = {
+                            'grant_type': 'password',
+                            'username': username,
+                            'password': pass,
+                            'client_id': client_id,
+                            'client_secret': client_secret,
+                        };
+
+                        var accesstoken = '';
+                        var formBody = [];
+                        for (var property in oauthdetails) {
+                          var encodedKey = encodeURIComponent(property);
+                          var encodedValue = encodeURIComponent(oauthdetails[property]);
+                          formBody.push(encodedKey + "=" + encodedValue);
+                        }
+                        formBody = formBody.join("&");
+
+                        fetch(drupaloath, {
+                        mode:  'cors',
+                        method: "post",
+                        headers: {
+                            'Accept': 'application/vnd.api+json',
+                            //'Content-Type': 'application/json'
+                            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                        },
+
+                        //make sure to serialize your JSON body
+                        body: formBody
+                        })
+                        .then((response) => response.json())
+                        .then((json) => {accesstoken = json.access_token; console.log('test');localStorage.setItem( 'drupaltoken', accesstoken);})
                         
+
+                        //.then( (response) => { 
+                        //do something awesome that makes the world a better place
+                        //});
+
                         let user = filteredUsers[0];
                         let responseJson = {
                             id: user.id,

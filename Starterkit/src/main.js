@@ -19,6 +19,7 @@ import "@vueform/multiselect/themes/default.css"
 
 import { initFirebaseBackend } from './authUtils';
 import { configureFakeBackend } from './helpers/fake-backend';
+import VueCookies from 'vue-cookies';
 
 const firebaseConfig = {
   apiKey: process.env.VUE_APP_apiKey,
@@ -46,6 +47,7 @@ createApp(App)
   .use(vueChartist)
   .use(vco)
   .use(Vue3ApexCharts)
+  .use(VueCookies)
   .use(VueGoogleMaps, {
     load: {
       apiKey: 'AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE',
